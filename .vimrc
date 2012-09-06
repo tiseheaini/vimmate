@@ -8,6 +8,9 @@ if has("autocmd")
 	autocmd FileType python setlocal et sta sw=4 sts=4
 endif
 
+" NERDTree插件的快捷键
+imap <silent> <F2> <esc>:NERDTreeToggle<CR>
+map <silent> <F2> :NERDTreeToggle<CR>
 " history文件中需要记录的行数
 set history=100
 " 带有如下符号的单词不要被换行分割
