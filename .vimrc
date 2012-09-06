@@ -8,6 +8,9 @@ if has("autocmd")
 	autocmd FileType python setlocal et sta sw=4 sts=4
 endif
 
+" 智能缩进
+set autoindent
+set smartindent
 " NERDTree插件的快捷键
 imap <silent> <F2> <esc>:NERDTreeToggle<CR>
 map <silent> <F2> :NERDTreeToggle<CR>
