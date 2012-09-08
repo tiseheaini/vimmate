@@ -10,7 +10,6 @@ endif
 
 " 智能缩进
 set autoindent
-set smartindent
 " NERDTree插件的快捷键
 imap <silent> <F2> <esc>:NERDTreeToggle<CR>
 map <silent> <F2> :NERDTreeToggle<CR>
