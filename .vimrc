@@ -2,6 +2,14 @@
 set sw=2
 set ts=2
 
+" 这种方案下，所有[TAB]键均以softtabstop个[SPACE]键代替，
+" 也就是基本上没有[TAB]键会在文档里出现了, 都采用[SPACE]键替代了。
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set smarttab
+
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
@@ -11,7 +19,7 @@ endif
 " 智能缩进
 set autoindent
 " NERDTree插件的快捷键
-imap <silent> <F2> <esc>:NERDTreeToggle<CR>
+imap <silent> <F2> <esc>:NERDTreeToggle<CR> :set nu <CR> :set nu <CR>
 map <silent> <F2> :NERDTreeToggle<CR>
 " history文件中需要记录的行数
 set history=100
@@ -35,7 +43,7 @@ set nocindent
 "默认情况下手动折叠
 set foldmethod=manual
 "显示行号（否：nonumber）
-"set number
+set number
 "不自动换行(否：wrap)
 set nowrap
 "缺省不产生备份文件
