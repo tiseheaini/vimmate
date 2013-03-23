@@ -4,10 +4,10 @@ set ts=2
 
 " 这种方案下，所有[TAB]键均以softtabstop个[SPACE]键代替，
 " 也就是基本上没有[TAB]键会在文档里出现了, 都采用[SPACE]键替代了。
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=4
+set softtabstop=2
 set smarttab
 
 " Source the vimrc file after saving it
