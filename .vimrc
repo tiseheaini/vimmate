@@ -2,6 +2,10 @@
 set sw=2
 set ts=2
 
+:syntax enable
+set t_Co=256
+colorscheme molokai
+
 " 这种方案下，所有[TAB]键均以softtabstop个[SPACE]键代替，
 " 也就是基本上没有[TAB]键会在文档里出现了, 都采用[SPACE]键替代了。
 set tabstop=2
